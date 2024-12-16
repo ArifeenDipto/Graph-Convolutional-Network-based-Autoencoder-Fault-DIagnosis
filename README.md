@@ -21,7 +21,7 @@ Technologies used:
 
 
 Folder hierarchy:
-'''
+
 D:.
 |   folder.txt
 |   LICENSE
@@ -34,7 +34,7 @@ D:.
 |       faultdiagdip94-0.0.1-py3-none-any.whl
 |       faultdiagdip94-0.0.1.tar.gz
 |       
-\---src
+\---src||
     +---faultdiagdip94
     |   |   main.py
     |   |   __init__.py
