@@ -3,6 +3,10 @@ Fault Detection and Diagnosis
 This project shows a Graph Convolutional Network enabled Variational Autoencoder
 for detecting and diagnosing faults in solar or PV array dataset.
 
+This work is published in MDPI Machines journal: 
+Title: Graph-Variational Convolutional Autoencoder-Based Fault Detection and Diagnosis for Photovoltaic Arrays
+Link: https://www.mdpi.com/2075-1702/12/12/894
+
 Features:
 
 1. Detects faults
@@ -18,74 +22,83 @@ Technologies used:
 
 Folder hierarchy:
 
-Folder PATH listing for volume WorkDrive
-Volume serial number is 70DA-0C15
 D:.
-ª   LICENSE
-ª   pyproject.toml
-ª   README.md
-ª   structure.txt
-ª   
-+---src
+|   folder.txt
+|   LICENSE
+|   pyproject.toml
+|   README.md
+|   structure.docx
+|   structure.txt
+|   
++---dist
+|       faultdiagdip94-0.0.1-py3-none-any.whl
+|       faultdiagdip94-0.0.1.tar.gz
+|       
+\---src
     +---faultdiagdip94
-        ª   main.py
-        ª   __init__.py
-        ª   
-        +---data
-        ª   +---processed
-        ª   ª       data_0.csv
-        ª   ª       data_1.csv
-        ª   ª       data_2.csv
-        ª   ª       data_3.csv
-        ª   ª       data_4.csv
-        ª   ª       data_5.csv
-        ª   ª       data_6.csv
-        ª   ª       data_7.csv
-        ª   ª       
-        ª   +---raw
-        ª           F0L.csv
-        ª           F1L.csv
-        ª           F2L.csv
-        ª           F3L.csv
-        ª           F4L.csv
-        ª           F5L.csv
-        ª           F6L.csv
-        ª           F7L.csv
-        ª           
-        +---models
-        ª   ª   GCNVAE.py
-        ª   ª   GCNVAEH3.py
-        ª   ª   GCNVAEWS.py
-        ª   ª   __init__.py
-        ª   ª   
-        ª   +---__pycache__
-        ª           GCNVAE.cpython-311.pyc
-        ª           __init__.cpython-311.pyc
-        ª           
-        +---pipeline
-        ª   ª   data_loader.py
-        ª   ª   data_processor.py
-        ª   ª   model_tester.py
-        ª   ª   model_trainer.py
-        ª   ª   __init__.py
-        ª   ª   
-        ª   +---__pycache__
-        ª           data_loader.cpython-311.pyc
-        ª           data_processor.cpython-311.pyc
-        ª           model_tester.cpython-311.pyc
-        ª           model_trainer.cpython-311.pyc
-        ª           __init__.cpython-311.pyc
-        ª           
-        +---saved_model
-        ª       gcn_vae.pkl
-        ª       __init__.py
-        ª       
-        +---utils
-            ª   config.yaml
-            ª   evaluator.py
-            ª   __init__.py
-            ª   
-            +---__pycache__
-                    evaluator.cpython-311.pyc
-                    __init__.cpython-311.pyc
-                    
+    |   |   main.py
+    |   |   __init__.py
+    |   |   
+    |   +---data
+    |   |   +---processed
+    |   |   |       data_0.csv
+    |   |   |       data_1.csv
+    |   |   |       data_2.csv
+    |   |   |       data_3.csv
+    |   |   |       data_4.csv
+    |   |   |       data_5.csv
+    |   |   |       data_6.csv
+    |   |   |       data_7.csv
+    |   |   |       
+    |   |   \---raw
+    |   |           F0L.csv
+    |   |           F1L.csv
+    |   |           F2L.csv
+    |   |           F3L.csv
+    |   |           F4L.csv
+    |   |           F5L.csv
+    |   |           F6L.csv
+    |   |           F7L.csv
+    |   |           
+    |   +---models
+    |   |   |   GCNVAE.py
+    |   |   |   GCNVAEH3.py
+    |   |   |   GCNVAEWS.py
+    |   |   |   __init__.py
+    |   |   |   
+    |   |   \---__pycache__
+    |   |           GCNVAE.cpython-311.pyc
+    |   |           __init__.cpython-311.pyc
+    |   |           
+    |   +---pipeline
+    |   |   |   data_loader.py
+    |   |   |   data_processor.py
+    |   |   |   model_tester.py
+    |   |   |   model_trainer.py
+    |   |   |   __init__.py
+    |   |   |   
+    |   |   \---__pycache__
+    |   |           data_loader.cpython-311.pyc
+    |   |           data_processor.cpython-311.pyc
+    |   |           model_tester.cpython-311.pyc
+    |   |           model_trainer.cpython-311.pyc
+    |   |           __init__.cpython-311.pyc
+    |   |           
+    |   +---saved_model
+    |   |       gcn_vae.pkl
+    |   |       __init__.py
+    |   |       
+    |   \---utils
+    |       |   config.yaml
+    |       |   evaluator.py
+    |       |   __init__.py
+    |       |   
+    |       \---__pycache__
+    |               evaluator.cpython-311.pyc
+    |               __init__.cpython-311.pyc
+    |               
+    \---faultdiagdip94.egg-info
+            dependency_links.txt
+            PKG-INFO
+            SOURCES.txt
+            top_level.txt
