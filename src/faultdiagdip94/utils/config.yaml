@@ -1,0 +1,31 @@
+
+paths:
+ raw_data: "D:/ML/FaultDiagnosis/src/faultdiagdip94/data/raw"
+ proc_data: "D:/ML/FaultDiagnosis/src/faultdiagdip94/data/processed"
+ saved_model: "D:/ML/FaultDiagnosis/src/faultdiagdip94/saved_model/gcn_vae.pkl"
+    
+params:
+ samples: 10000
+ drop: 'Time'
+ columns: ['Ipv', 'Vpv', 'Vdc', 'ia', 'ib', 'ic', 'va', 'vb', 'vc', 'Iabc', 'If', 'Vabc', 'Vf']
+ correlation: 'Pearson'
+ tr_start_index: 0
+ tr_end_index: 5000
+ val_start_index: 5000
+ val_end_index: 7000
+ te_start_index: 0
+ te_end_index: 1000
+ f_start_index: 0
+ f_end_index: 1000
+ similarity_metrics: 'Cosine'
+ confidence_value: 0.99
+
+conv_filter:
+    window_size: 5
+
+model_params:
+ improved: 'left'
+ input_dim: 13
+ epoch: 3000
+ learning_rate: 0.001
+ 
