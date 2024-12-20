@@ -7,7 +7,10 @@ This work is published in MDPI Machines journal:
 Title: Graph-Variational Convolutional Autoencoder-Based Fault Detection and Diagnosis for Photovoltaic Arrays
 Link: https://www.mdpi.com/2075-1702/12/12/894
 
-Features:
+Abstract:
+Solar energy is a critical renewable energy source, with solar arrays or photovoltaic systems widely used to convert solar energy into electrical energy. However, solar array systems can develop faults and may exhibit poor performance. Diagnosing and resolving faults within these systems promptly is crucial to ensure reliability and efficiency in energy generation. Autoencoders and their variants have gained popularity in recent studies for detecting and diagnosing faults in solar arrays. However, traditional autoencoder models often struggle to capture the spatial and temporal relationships present in photovoltaic sensor data. This paper introduces a deep learning model that combines a graph convolutional network with a variational autoencoder to diagnose faults in solar arrays. The graph convolutional network effectively learns from spatial and temporal sensor data, significantly improving fault detection performance. We evaluated the proposed deep learning model on a recently published solar array dataset for an integrated power probability table mode. The experimental results show that the model achieves a fault detection rate exceeding 95% and outperforms the conventional autoencoder models. We also identified faulty components by analyzing the model’s reconstruction error for each feature, and we validated the analysis through the Kolmogorov–Smirnov test and noise injection techniques.
+
+Features of the model:
 
 1. Detects faults
 2. Diagnose the root cause of the fault
@@ -20,85 +23,5 @@ Technologies used:
 3.Yaml
 
 
-Folder hierarchy:
 
-D:.
-|   folder.txt
-|   LICENSE
-|   pyproject.toml
-|   README.md
-|   structure.docx
-|   structure.txt
-|   
-+---dist
-|       faultdiagdip94-0.0.1-py3-none-any.whl
-|       faultdiagdip94-0.0.1.tar.gz
-|       
-\---src||
-    +---faultdiagdip94
-    |   |   main.py
-    |   |   __init__.py
-    |   |   
-    |   +---data
-    |   |   +---processed
-    |   |   |       data_0.csv
-    |   |   |       data_1.csv
-    |   |   |       data_2.csv
-    |   |   |       data_3.csv
-    |   |   |       data_4.csv
-    |   |   |       data_5.csv
-    |   |   |       data_6.csv
-    |   |   |       data_7.csv
-    |   |   |       
-    |   |   \---raw
-    |   |           F0L.csv
-    |   |           F1L.csv
-    |   |           F2L.csv
-    |   |           F3L.csv
-    |   |           F4L.csv
-    |   |           F5L.csv
-    |   |           F6L.csv
-    |   |           F7L.csv
-    |   |           
-    |   +---models
-    |   |   |   GCNVAE.py
-    |   |   |   GCNVAEH3.py
-    |   |   |   GCNVAEWS.py
-    |   |   |   __init__.py
-    |   |   |   
-    |   |   \---__pycache__
-    |   |           GCNVAE.cpython-311.pyc
-    |   |           __init__.cpython-311.pyc
-    |   |           
-    |   +---pipeline
-    |   |   |   data_loader.py
-    |   |   |   data_processor.py
-    |   |   |   model_tester.py
-    |   |   |   model_trainer.py
-    |   |   |   __init__.py
-    |   |   |   
-    |   |   \---__pycache__
-    |   |           data_loader.cpython-311.pyc
-    |   |           data_processor.cpython-311.pyc
-    |   |           model_tester.cpython-311.pyc
-    |   |           model_trainer.cpython-311.pyc
-    |   |           __init__.cpython-311.pyc
-    |   |           
-    |   +---saved_model
-    |   |       gcn_vae.pkl
-    |   |       __init__.py
-    |   |       
-    |   \---utils
-    |       |   config.yaml
-    |       |   evaluator.py
-    |       |   __init__.py
-    |       |   
-    |       \---__pycache__
-    |               evaluator.cpython-311.pyc
-    |               __init__.cpython-311.pyc
-    |               
-    \---faultdiagdip94.egg-info
-            dependency_links.txt
-            PKG-INFO
-            SOURCES.txt
-            top_level.txt'''
+   
